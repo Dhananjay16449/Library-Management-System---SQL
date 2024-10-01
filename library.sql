@@ -152,9 +152,8 @@ GROUP BY 1;
 
 -- List members who registered in the last 180 days
 
--- select * from members
--- where Reg_date >= current_date-interval '180 days';
-
+SELECT * FROM members
+WHERE reg_date >= CURDATE() - INTERVAL 180 DAY;
 
 
 -- List the employee with their branch manager's name and their branch details
